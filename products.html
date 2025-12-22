@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Products - FredElectrix | Quality Electrical & Electronics Equipment in
+      Kenya
+    </title>
+    <meta
+      name="description"
+      content="Shop quality solar panels, inverters, CCTV cameras, electrical tools, and electronics in Kenya at FredElectrix"
+    />
+    <!-- Vendor CSS Files -->
+    <link rel="icon" href="assets/images/logo.png" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/logo.png"
+            alt="FredElectrix Logo"
+            height="40"
+          />
+          <span class="fw-bold">FredElectrix</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-light ms-lg-3"
+                href="contact.html#quote"
+              >
+                <i class="bi bi-chat-dots me-1"></i>Get Quote
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Products Hero -->
+    <section class="hero-section bg-light">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">
+              Quality Electrical Products
+            </h1>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
+              Premium electrical equipment, tools, and electronics for all your
+              needs. Competitive prices with warranty.
+            </p>
+            <div class="d-flex gap-3" data-aos="fade-up" data-aos-delay="200">
+              <a href="#featured" class="btn btn-primary btn-lg">
+                <i class="fas fa-shopping-cart me-2"></i> Shop Now
+              </a>
+              <a
+                href="tel:+254720123456"
+                class="btn btn-outline-primary btn-lg"
+              >
+                <i class="fas fa-headset me-2"></i> Call for Inquiry
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <img
+              src="assets/images/electricaltools.jpeg"
+              alt="Electrical Products"
+              class="img-fluid rounded shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Filter -->
+    <section class="py-5 bg-light" id="featured">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="text-center mb-4">
+              <h2 class="fw-bold mb-3" data-aos="fade-up">Our Products</h2>
+              <p
+                class="lead text-muted"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                Quality electrical and electronics equipment
+              </p>
+            </div>
+
+            <div
+              class="filter-buttons text-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <button
+                class="btn btn-outline-primary filter-btn active"
+                onclick="filterProducts('all')"
+              >
+                All Products
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                onclick="filterProducts('solar')"
+              >
+                Solar Equipment
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                onclick="filterProducts('security')"
+              >
+                Security Systems
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                onclick="filterProducts('tools')"
+              >
+                Tools & Accessories
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                onclick="filterProducts('lighting')"
+              >
+                Lighting Solutions
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                onclick="filterProducts('power')"
+              >
+                Power Solutions
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="row g-4 products-grid">
+          <!-- Product 1 - Solar Panel -->
+          <div class="col-md-6 col-lg-4 product-item" data-category="solar">
+            <div class="card h-100 border-0 shadow-sm" data-aos="fade-up">
+              <div class="position-relative">
+                <img
+                  src="assets/images/solarpannel.jpeg"
+                  class="card-img-top"
+                  alt="Solar Panel"
+                />
+                <span class="badge bg-danger position-absolute top-0 end-0 m-3"
+                  >Best Seller</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">550W Monocrystalline Solar Panel</h5>
+                <p class="card-text text-muted">
+                  High-efficiency solar panel with 25-year warranty, perfect for
+                  residential and commercial use.
+                </p>
+                <div class="product-specs mb-3">
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-bolt me-1"></i> 550W Output</small
+                  >
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-shield-alt me-1"></i> 25-Year
+                    Warranty</small
+                  >
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-sun me-1"></i> High Efficiency</small
+                  >
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold text-primary h5">KSh 15,000</span>
+                    <del class="text-muted ms-2">KSh 18,000</del>
+                  </div>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-product="Solar Panel 550W"
+                    data-price="15000"
+                  >
+                    <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 - Power Inverter -->
+          <div class="col-md-6 col-lg-4 product-item" data-category="power">
+            <div
+              class="card h-100 border-0 shadow-sm"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="position-relative">
+                <img
+                  src="assets/images/inverter.jpeg"
+                  class="card-img-top"
+                  alt="Power Inverter"
+                />
+                <span class="badge bg-success position-absolute top-0 end-0 m-3"
+                  >In Stock</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">3000VA Pure Sine Wave Inverter</h5>
+                <p class="card-text text-muted">
+                  Pure sine wave inverter with LCD display, perfect for
+                  sensitive electronics and backup power.
+                </p>
+                <div class="product-specs mb-3">
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-plug me-1"></i> 3000VA Capacity</small
+                  >
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-battery-full me-1"></i> Pure Sine
+                    Wave</small
+                  >
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-desktop me-1"></i> LCD Display</small
+                  >
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold text-primary h5">KSh 28,500</span>
+                  </div>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-product="3000VA Inverter"
+                    data-price="28500"
+                  >
+                    <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 - CCTV Camera -->
+          <div class="col-md-6 col-lg-4 product-item" data-category="security">
+            <div
+              class="card h-100 border-0 shadow-sm"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="position-relative">
+                <img
+                  src="assets/images/cctvimage.jpeg"
+                  class="card-img-top"
+                  alt="CCTV Camera"
+                />
+                <span class="badge bg-info position-absolute top-0 end-0 m-3"
+                  >New Arrival</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">4K IP CCTV Camera System</h5>
+                <p class="card-text text-muted">
+                  4-camera 4K surveillance system with night vision and remote
+                  mobile access.
+                </p>
+                <div class="product-specs mb-3">
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-video me-1"></i> 4K Resolution</small
+                  >
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-moon me-1"></i> Night Vision</small
+                  >
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-mobile-alt me-1"></i> Remote Access</small
+                  >
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold text-primary h5">KSh 45,000</span>
+                    <del class="text-muted ms-2">KSh 52,000</del>
+                  </div>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-product="4K CCTV System"
+                    data-price="45000"
+                  >
+                    <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 - Electrical Tool Kit -->
+          <div class="col-md-6 col-lg-4 product-item" data-category="tools">
+            <div class="card h-100 border-0 shadow-sm" data-aos="fade-up">
+              <div class="position-relative">
+                <img
+                  src="assets/images/electricaltools.jpeg"
+                  class="card-img-top"
+                  alt="Tool Kit"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Professional Electrical Tool Kit</h5>
+                <p class="card-text text-muted">
+                  Complete 45-piece electrical tool set for professionals and
+                  DIY enthusiasts.
+                </p>
+                <div class="product-specs mb-3">
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-tools me-1"></i> 45 Pieces</small
+                  >
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-briefcase me-1"></i> Professional
+                    Grade</small
+                  >
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-shield-alt me-1"></i> 2-Year
+                    Warranty</small
+                  >
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold text-primary h5">KSh 12,500</span>
+                  </div>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-product="Electrical Tool Kit"
+                    data-price="12500"
+                  >
+                    <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 - LED Panel Light -->
+          <div class="col-md-6 col-lg-4 product-item" data-category="lighting">
+            <div
+              class="card h-100 border-0 shadow-sm"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="position-relative">
+                <img
+                  src="assets/images/led.jpeg"
+                  class="card-img-top"
+                  alt="LED Light"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">24W LED Panel Light</h5>
+                <p class="card-text text-muted">
+                  Energy-efficient LED panel light with dimmable feature,
+                  perfect for offices and homes.
+                </p>
+                <div class="product-specs mb-3">
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-lightbulb me-1"></i> 24W Power</small
+                  >
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-sliders-h me-1"></i> Dimmable</small
+                  >
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-bolt me-1"></i> Energy Saving</small
+                  >
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold text-primary h5">KSh 1,850</span>
+                    <del class="text-muted ms-2">KSh 2,200</del>
+                  </div>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-product="24W LED Panel"
+                    data-price="1850"
+                  >
+                    <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 - Solar Battery -->
+          <div class="col-md-6 col-lg-4 product-item" data-category="solar">
+            <div
+              class="card h-100 border-0 shadow-sm"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="position-relative">
+                <img
+                  src="assets/images/solarbattery.jpeg"
+                  class="card-img-top"
+                  alt="Solar Battery"
+                />
+                <span
+                  class="badge bg-warning text-dark position-absolute top-0 end-0 m-3"
+                  >Limited Stock</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">200AH Deep Cycle Solar Battery</h5>
+                <p class="card-text text-muted">
+                  Heavy-duty deep cycle battery for solar systems with long
+                  lifespan and maintenance-free design.
+                </p>
+                <div class="product-specs mb-3">
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-battery-three-quarters me-1"></i> 200AH
+                    Capacity</small
+                  >
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-recycle me-1"></i> Deep Cycle</small
+                  >
+                  <small class="text-muted d-block"
+                    ><i class="fas fa-clock me-1"></i> Long Lifespan</small
+                  >
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="fw-bold text-primary h5">KSh 32,000</span>
+                  </div>
+                  <button
+                    class="btn btn-primary add-to-cart"
+                    data-product="200AH Solar Battery"
+                    data-price="32000"
+                  >
+                    <i class="fas fa-cart-plus me-1"></i> Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-question-circle me-2"></i> Need Custom Products?
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold mb-3">Product Categories</h2>
+          <p class="lead text-muted">
+            Browse our wide range of electrical products
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div
+              class="category-card text-center p-5 border rounded-3"
+              data-aos="fade-up"
+            >
+              <i class="fas fa-sun text-primary fa-3x mb-3"></i>
+              <h4>Solar Products</h4>
+              <p class="text-muted">
+                Panels, batteries, charge controllers, and accessories
+              </p>
+              <a href="#solar" class="btn btn-outline-primary">View Products</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="category-card text-center p-5 border rounded-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <i class="fas fa-shield-alt text-primary fa-3x mb-3"></i>
+              <h4>Security Systems</h4>
+              <p class="text-muted">
+                CCTV cameras, alarms, access control, and intercoms
+              </p>
+              <a href="#security" class="btn btn-outline-primary"
+                >View Products</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="category-card text-center p-5 border rounded-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <i class="fas fa-tools text-primary fa-3x mb-3"></i>
+              <h4>Tools & Equipment</h4>
+              <p class="text-muted">
+                Professional electrical tools and testing equipment
+              </p>
+              <a href="#tools" class="btn btn-outline-primary">View Products</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Sidebar (Hidden by default) -->
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h5><i class="fas fa-shopping-cart me-2"></i>Shopping Cart</h5>
+        <button class="btn-close" onclick="closeCart()"></button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items will be added here -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cartTotal">KSh 0</span>
+        </div>
+        <a href="contact.html" class="btn btn-primary w-100">Checkout</a>
+      </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+
+    <!-- Cart Button -->
+    <button class="cart-floating-btn" onclick="toggleCart()">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2 class="mb-3">Need Bulk Orders or Special Requirements?</h2>
+            <p class="mb-0">
+              Contact us for wholesale prices and custom product solutions
+            </p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="contact.html" class="btn btn-light btn-lg">
+              <i class="fas fa-headset me-2"></i> Contact for Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="assets/images/logo.png"
+                alt="FredElectrix Logo"
+                height="40"
+                class="me-2"
+              />
+              <span class="h4 fw-bold mb-0">FredElectrix</span>
+            </div>
+            <p class="mb-4">
+              Your trusted partner for electrical solutions and electronics in
+              Kenya since 2023.
+            </p>
+            <div class="social-icons">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="text-white">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="services.html" class="text-white">Services</a>
+              </li>
+              <li class="mb-2">
+                <a href="products.html" class="text-white">Products</a>
+              </li>
+              <li class="mb-2">
+                <a href="about.html" class="text-white">About Us</a>
+              </li>
+              <li><a href="contact.html" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-4">Product Categories</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="products.html#solar" class="text-white"
+                  >Solar Equipment</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="products.html#security" class="text-white"
+                  >Security Systems</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="products.html#tools" class="text-white"
+                  >Tools & Accessories</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="products.html#lighting" class="text-white"
+                  >Lighting Solutions</a
+                >
+              </li>
+              <li>
+                <a href="products.html#power" class="text-white"
+                  >Power Solutions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-4">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <i class="fas fa-map-marker-alt me-2"></i> Nairobi, Kenya
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-phone me-2"></i> +254 720 123 456
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-phone me-2"></i> +254 734 567 890
+              </li>
+              <li>
+                <i class="fas fa-envelope me-2"></i> info@fredelectrix.co.ke
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4 bg-secondary" />
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">&copy; 2025 FredElectrix. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="privacy.html" class="text-white me-3">Privacy Policy</a>
+            <a href="terms-of-service.html" class="text-white me-3"
+              >Terms of Service</a
+            >
+            <a href="do-not-sell-info.html" class="text-white"
+              >Do Not Sell My Info</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Vendor JS -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+
+      // Cart functionality
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      function updateCartDisplay() {
+        const cartCount = document.getElementById("cartCount");
+        const cartItems = document.getElementById("cartItems");
+        const cartTotal = document.getElementById("cartTotal");
+
+        // Update count
+        cartCount.textContent = cart.length;
+
+        // Update items list
+        cartItems.innerHTML = "";
+        let total = 0;
+
+        cart.forEach((item, index) => {
+          total += item.price;
+          cartItems.innerHTML += `
+                    <div class="cart-item">
+                        <div class="cart-item-info">
+                            <h6>${item.name}</h6>
+                            <small>KSh ${item.price.toLocaleString()}</small>
+                        </div>
+                        <button class="btn btn-sm btn-outline-danger" onclick="removeFromCart(${index})">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                `;
+        });
+
+        // Update total
+        cartTotal.textContent = `KSh ${total.toLocaleString()}`;
+
+        // Save to localStorage
+        localStorage.setItem("cart", JSON.stringify(cart));
+      }
+
+      function addToCart(productName, price) {
+        cart.push({
+          name: productName,
+          price: price,
+        });
+        updateCartDisplay();
+        showAlert("success", `${productName} added to cart!`);
+      }
+
+      function removeFromCart(index) {
+        cart.splice(index, 1);
+        updateCartDisplay();
+      }
+
+      function toggleCart() {
+        const sidebar = document.getElementById("cartSidebar");
+        const overlay = document.getElementById("cartOverlay");
+        sidebar.classList.toggle("open");
+        overlay.classList.toggle("show");
+      }
+
+      function closeCart() {
+        const sidebar = document.getElementById("cartSidebar");
+        const overlay = document.getElementById("cartOverlay");
+        sidebar.classList.remove("open");
+        overlay.classList.remove("show");
+      }
+
+      // Add event listeners to Add to Cart buttons
+      document.querySelectorAll(".add-to-cart").forEach((button) => {
+        button.addEventListener("click", function () {
+          const productName = this.getAttribute("data-product");
+          const price = parseInt(this.getAttribute("data-price"));
+          addToCart(productName, price);
+        });
+      });
+
+      // Initialize cart display
+      updateCartDisplay();
+
+      // Products Filter Functionality
+      function filterProducts(category) {
+        const products = document.querySelectorAll(".product-item");
+
+        products.forEach((product) => {
+          if (category === "all" || product.dataset.category === category) {
+            product.style.display = "block";
+            setTimeout(() => {
+              product.style.opacity = "1";
+              product.style.transform = "scale(1)";
+            }, 50);
+          } else {
+            product.style.opacity = "0";
+            product.style.transform = "scale(0.8)";
+            setTimeout(() => {
+              product.style.display = "none";
+            }, 300);
+          }
+        });
+
+        // Update active filter button
+        document.querySelectorAll(".filter-btn").forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        event.target.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
