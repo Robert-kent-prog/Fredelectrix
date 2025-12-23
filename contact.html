@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
     <title>Contact Us - FredElectrix | Electrical Services in Kenya</title>
     <meta
       name="description"
@@ -31,6 +34,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <style>
+      /* Contact Page Responsive Fixes */
       .contact-info-card {
         transition: transform 0.3s ease;
       }
@@ -57,6 +61,271 @@
         color: white;
         border-radius: 10px;
         padding: 1.5rem;
+      }
+      .contact img {
+        border-radius: 10px;
+        height: 200px;
+        width: 200px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Responsive Fixes */
+      @media (max-width: 768px) {
+        /* Hero Section Fixes */
+        .hero-section h1.display-4 {
+          font-size: 2rem !important;
+          line-height: 1.3;
+          text-align: center;
+        }
+
+        .hero-section p.lead {
+          font-size: 1.1rem;
+          text-align: center;
+        }
+
+        .hero-section .d-flex.flex-wrap {
+          flex-direction: column !important;
+          gap: 15px !important;
+        }
+
+        .hero-section .btn {
+          width: 100%;
+          max-width: 300px;
+          margin: 0 auto;
+        }
+
+        .hero-section img {
+          margin-top: 30px;
+          width: 100%;
+        }
+
+        /* Contact Info Cards */
+        .col-md-4 {
+          margin-bottom: 20px;
+        }
+
+        .contact-info-card {
+          margin-bottom: 20px;
+        }
+
+        /* Form Section */
+        .col-lg-8,
+        .col-lg-4 {
+          width: 100%;
+        }
+
+        .col-lg-4 {
+          margin-top: 30px;
+        }
+
+        /* Contact Hours */
+        .contact-hours .row .col-6 {
+          width: 50%;
+        }
+
+        .contact-hours .row .col-6.text-end {
+          text-align: right !important;
+        }
+
+        /* Emergency Contact */
+        .emergency-contact h3 {
+          font-size: 1.5rem;
+        }
+
+        /* Social Media Buttons */
+        .social-icons .btn {
+          margin-bottom: 10px;
+        }
+
+        /* Form Inputs */
+        .form-control,
+        .form-select {
+          font-size: 16px !important; /* Prevents zoom on iOS */
+        }
+
+        .btn-lg {
+          padding: 12px 24px;
+          font-size: 1rem;
+        }
+
+        /* Quote Form */
+        #quote .card-body {
+          padding: 1.5rem !important;
+        }
+
+        /* FAQ Accordion */
+        .accordion-button {
+          font-size: 1rem;
+          padding: 1rem 1.25rem;
+        }
+
+        /* Map Section */
+        .map-container iframe {
+          height: 350px;
+        }
+
+        /* Newsletter Form */
+        .newsletter-form .col-md-8,
+        .newsletter-form .col-md-4 {
+          width: 100%;
+          margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer .row > div {
+          margin-bottom: 30px;
+          /* text-align: center; */
+        }
+
+        footer .social-icons {
+          justify-content: center;
+        }
+
+        footer .text-md-end {
+          text-align: center !important;
+        }
+
+        footer .text-md-start {
+          text-align: center !important;
+        }
+        .contact img {
+          border-radius: 10px;
+          height: 180px;
+          width: 100px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      @media (max-width: 576px) {
+        /* Extra Small Devices */
+        .hero-section h1.display-4 {
+          font-size: 1.75rem !important;
+        }
+
+        .hero-section {
+          padding: 60px 0 !important;
+        }
+
+        /* Contact Hours */
+        .contact-hours {
+          padding: 1.25rem;
+        }
+
+        /* Emergency Contact */
+        .emergency-contact {
+          padding: 1.25rem;
+          text-align: center;
+        }
+
+        .emergency-contact h3 {
+          font-size: 1.3rem;
+        }
+
+        /* Cards */
+        .card-body {
+          padding: 1.25rem !important;
+        }
+
+        /* Form Layout */
+        .row .col-md-6 {
+          width: 100%;
+        }
+
+        /* Map and Info Section */
+        #location .col-lg-6 {
+          width: 100%;
+          margin-bottom: 30px;
+        }
+
+        /* Accordion */
+        .accordion-body {
+          font-size: 0.95rem;
+        }
+        .contact img {
+          border-radius: 10px;
+          height: 180px;
+          width: 100px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      @media (max-width: 991.98px) {
+        /* Tablet adjustments */
+        .hero-section .row {
+          flex-direction: column;
+        }
+
+        .hero-section .col-lg-6 {
+          width: 100%;
+        }
+
+        .hero-section img {
+          margin-top: 40px;
+        }
+
+        /* Form and Sidebar */
+        .col-lg-8,
+        .col-lg-4 {
+          width: 100%;
+        }
+
+        .col-lg-4 {
+          margin-top: 40px;
+        }
+      }
+
+      /* Fix for button touch targets on mobile */
+      @media (hover: none) and (pointer: coarse) {
+        .btn {
+          min-height: 44px;
+          padding: 12px 24px;
+        }
+
+        .nav-link {
+          padding: 12px 0;
+        }
+
+        .form-control,
+        .form-select {
+          font-size: 16px;
+        }
+      }
+
+      /* Prevent horizontal scrolling */
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+
+      /* Container fluid on mobile */
+      @media (max-width: 768px) {
+        .container {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+
+      /* Image responsiveness */
+      .img-fluid {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Center align content on mobile */
+      @media (max-width: 768px) {
+        .text-center-mobile {
+          text-align: center !important;
+        }
+
+        .justify-content-center-mobile {
+          justify-content: center !important;
+        }
+
+        .mx-auto-mobile {
+          margin-left: auto !important;
+          margin-right: auto !important;
+        }
       }
     </style>
   </head>
@@ -98,7 +367,10 @@
               <a class="nav-link active" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-outline-light ms-lg-3" href="#quote">
+              <a
+                class="btn btn-outline-light ms-lg-3"
+                href="contact.html#quote"
+              >
                 <i class="bi bi-chat-dots me-1"></i>Get Quote
               </a>
             </li>
@@ -107,29 +379,39 @@
       </div>
     </nav>
 
-    <!-- Contact Hero -->
+    <!-- Contact Hero - Fixed like products page -->
     <section class="hero-section bg-light">
       <div class="container py-5">
         <div class="row align-items-center">
-          <div class="col-lg-6">
-            <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h1
+              class="display-4 fw-bold mb-4 text-center text-lg-start"
+              data-aos="fade-up"
+            >
               Get in Touch With Us
             </h1>
-            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
+            <p
+              class="lead mb-4 text-center text-lg-start"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               Have questions about our electrical services or products? We're
               here to help! Contact us for expert advice and solutions.
             </p>
             <div
-              class="d-flex flex-wrap gap-3"
+              class="d-flex flex-column flex-sm-row flex-wrap gap-3 justify-content-center justify-content-lg-start"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <a href="tel:+254720123456" class="btn btn-primary btn-lg">
+              <a
+                href="tel:+254720123456"
+                class="btn btn-primary btn-lg mb-2 mb-sm-0"
+              >
                 <i class="fas fa-phone me-2"></i> Call Now
               </a>
               <a
                 href="mailto:info@fredelectrix.co.ke"
-                class="btn btn-outline-primary btn-lg"
+                class="btn btn-outline-primary btn-lg mb-2 mb-sm-0"
               >
                 <i class="fas fa-envelope me-2"></i> Email Us
               </a>
@@ -138,11 +420,14 @@
               </a>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-left">
+          <div
+            class="col-lg-6 order-2 order-lg-2 mb-4 contact mb-lg-0"
+            data-aos="fade-left"
+          >
             <img
-              src="assets/images/contact-us1.jpeg"
+              src="assets/images/contact-us1.png"
               alt="Contact FredElectrix"
-              class="img-fluid rounded shadow"
+              class="img-fluid rounded shadow w-100"
             />
           </div>
         </div>
@@ -152,8 +437,8 @@
     <!-- Contact Information -->
     <section class="py-5">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-md-4" data-aos="fade-up">
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-4 col-sm-6" data-aos="fade-up">
             <div class="card contact-info-card border-0 shadow-sm h-100">
               <div class="card-body text-center p-4">
                 <div class="icon-box bg-primary mb-3 mx-auto">
@@ -168,7 +453,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="col-md-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <div class="card contact-info-card border-0 shadow-sm h-100">
               <div class="card-body text-center p-4">
                 <div class="icon-box bg-primary mb-3 mx-auto">
@@ -184,7 +473,11 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div
+            class="col-md-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <div class="card contact-info-card border-0 shadow-sm h-100">
               <div class="card-body text-center p-4">
                 <div class="icon-box bg-primary mb-3 mx-auto">
@@ -211,14 +504,16 @@
           <div class="col-lg-8 mb-5 mb-lg-0">
             <div class="card border-0 shadow-sm">
               <div class="card-body p-4 p-md-5">
-                <h2 class="mb-4" data-aos="fade-up">Send Us a Message</h2>
+                <h2 class="mb-4 text-center text-lg-start" data-aos="fade-up">
+                  Send Us a Message
+                </h2>
                 <form id="contactForm" data-aos="fade-up" data-aos-delay="100">
                   <div class="row">
                     <div class="col-md-6 mb-3">
                       <label for="name" class="form-label">Full Name *</label>
                       <input
                         type="text"
-                        class="form-control"
+                        class="form-control form-control-lg"
                         id="name"
                         required
                       />
@@ -229,7 +524,7 @@
                       >
                       <input
                         type="email"
-                        class="form-control"
+                        class="form-control form-control-lg"
                         id="email"
                         required
                       />
@@ -243,14 +538,18 @@
                       >
                       <input
                         type="tel"
-                        class="form-control"
+                        class="form-control form-control-lg"
                         id="phone"
                         required
                       />
                     </div>
                     <div class="col-md-6 mb-3">
                       <label for="subject" class="form-label">Subject *</label>
-                      <select class="form-select" id="subject" required>
+                      <select
+                        class="form-select form-select-lg"
+                        id="subject"
+                        required
+                      >
                         <option value="" selected disabled>
                           Select a subject
                         </option>
@@ -270,7 +569,7 @@
                     <label for="service" class="form-label"
                       >Service Interest (Optional)</label
                     >
-                    <select class="form-select" id="service">
+                    <select class="form-select form-select-lg" id="service">
                       <option value="" selected>Select service</option>
                       <option value="solar">Solar Installation</option>
                       <option value="cctv">CCTV & Security</option>
@@ -286,7 +585,7 @@
                       >Your Message *</label
                     >
                     <textarea
-                      class="form-control"
+                      class="form-control form-control-lg"
                       id="message"
                       rows="5"
                       placeholder="Please describe your inquiry in detail..."
@@ -317,7 +616,10 @@
 
           <div class="col-lg-4">
             <!-- Business Hours -->
-            <div class="contact-hours mb-4" data-aos="fade-left">
+            <div
+              class="contact-hours mb-4 text-center text-lg-start"
+              data-aos="fade-left"
+            >
               <h4 class="mb-3">Business Hours</h4>
               <div class="row">
                 <div class="col-6">
@@ -352,7 +654,7 @@
 
             <!-- Emergency Contact -->
             <div
-              class="emergency-contact mb-4"
+              class="emergency-contact mb-4 text-center text-lg-start"
               data-aos="fade-left"
               data-aos-delay="100"
             >
@@ -367,7 +669,7 @@
 
             <!-- Social Media -->
             <div
-              class="card border-0 shadow-sm"
+              class="card border-0 shadow-sm text-center text-lg-start"
               data-aos="fade-left"
               data-aos-delay="200"
             >
@@ -376,7 +678,9 @@
                 <p class="text-muted mb-3">
                   Stay connected for updates and tips
                 </p>
-                <div class="social-icons">
+                <div
+                  class="social-icons d-flex flex-wrap justify-content-center justify-content-lg-start"
+                >
                   <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2">
                     <i class="fab fa-facebook-f me-1"></i>
                   </a>
@@ -386,7 +690,7 @@
                   <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2">
                     <i class="fab fa-instagram me-1"></i>
                   </a>
-                  <a href="#" class="btn btn-outline-primary btn-sm mb-2">
+                  <a href="#" class="btn btn-outline-primary btn-sm mb-2 me-2">
                     <i class="fab fa-linkedin-in me-1"></i>
                   </a>
                   <a href="#" class="btn btn-outline-primary btn-sm mb-2">
@@ -427,7 +731,7 @@
                       >
                       <input
                         type="text"
-                        class="form-control"
+                        class="form-control form-control-lg"
                         id="quoteName"
                         required
                       />
@@ -438,7 +742,7 @@
                       >
                       <input
                         type="email"
-                        class="form-control"
+                        class="form-control form-control-lg"
                         id="quoteEmail"
                         required
                       />
@@ -452,7 +756,7 @@
                       >
                       <input
                         type="tel"
-                        class="form-control"
+                        class="form-control form-control-lg"
                         id="quotePhone"
                         required
                       />
@@ -463,7 +767,7 @@
                       >
                       <input
                         type="text"
-                        class="form-control"
+                        class="form-control form-control-lg"
                         id="location"
                         placeholder="e.g., Nairobi, Karen"
                         required
@@ -475,7 +779,11 @@
                     <label for="serviceType" class="form-label"
                       >Service Required *</label
                     >
-                    <select class="form-select" id="serviceType" required>
+                    <select
+                      class="form-select form-select-lg"
+                      id="serviceType"
+                      required
+                    >
                       <option value="" selected disabled>Select Service</option>
                       <option value="solar">Solar Power Installation</option>
                       <option value="cctv">CCTV & Security System</option>
@@ -492,7 +800,11 @@
                     <label for="propertyType" class="form-label"
                       >Property Type *</label
                     >
-                    <select class="form-select" id="propertyType" required>
+                    <select
+                      class="form-select form-select-lg"
+                      id="propertyType"
+                      required
+                    >
                       <option value="" selected disabled>
                         Select Property Type
                       </option>
@@ -510,7 +822,7 @@
                       >Project Description *</label
                     >
                     <textarea
-                      class="form-control"
+                      class="form-control form-control-lg"
                       id="description"
                       rows="4"
                       placeholder="Please describe your project requirements, size, and any specific needs..."
@@ -532,7 +844,7 @@
                   </div>
 
                   <div class="text-center">
-                    <button type="submit" class="btn btn-primary btn-lg">
+                    <button type="submit" class="btn btn-primary btn-lg px-5">
                       <i class="fas fa-calculator me-2"></i> Get Free Quote
                     </button>
                   </div>
@@ -728,10 +1040,12 @@
           <div class="col-lg-6" data-aos="fade-left">
             <div class="card border-0 shadow-sm h-100">
               <div class="card-body p-4 p-md-5">
-                <h3 class="mb-4">Visit Our Office</h3>
+                <h3 class="mb-4 text-center text-lg-start">Visit Our Office</h3>
 
-                <div class="mb-4">
-                  <h5>
+                <div class="mb-4 text-center text-lg-start">
+                  <h5
+                    class="d-flex align-items-center justify-content-center justify-content-lg-start"
+                  >
                     <i class="fas fa-map-marker-alt text-primary me-2"></i
                     >Address
                   </h5>
@@ -742,13 +1056,19 @@
                   </p>
                 </div>
 
-                <div class="mb-4">
-                  <h5><i class="fas fa-car text-primary me-2"></i>Parking</h5>
+                <div class="mb-4 text-center text-lg-start">
+                  <h5
+                    class="d-flex align-items-center justify-content-center justify-content-lg-start"
+                  >
+                    <i class="fas fa-car text-primary me-2"></i>Parking
+                  </h5>
                   <p class="mb-0">Free parking available on-site for clients</p>
                 </div>
 
-                <div class="mb-4">
-                  <h5>
+                <div class="mb-4 text-center text-lg-start">
+                  <h5
+                    class="d-flex align-items-center justify-content-center justify-content-lg-start"
+                  >
                     <i class="fas fa-bus text-primary me-2"></i>Public Transport
                   </h5>
                   <p class="mb-0">
@@ -757,8 +1077,10 @@
                   </p>
                 </div>
 
-                <div class="mb-4">
-                  <h5>
+                <div class="mb-4 text-center text-lg-start">
+                  <h5
+                    class="d-flex align-items-center justify-content-center justify-content-lg-start"
+                  >
                     <i class="fas fa-clock text-primary me-2"></i>Best Time to
                     Visit
                   </h5>
@@ -772,7 +1094,7 @@
                 </div>
 
                 <div class="alert alert-info">
-                  <h6>
+                  <h6 class="d-flex align-items-center">
                     <i class="fas fa-info-circle me-2"></i>Before You Visit
                   </h6>
                   <p class="mb-0 small">
@@ -803,7 +1125,7 @@
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div class="col-md-8">
+              <div class="col-md-8 col-sm-12">
                 <input
                   type="email"
                   class="form-control form-control-lg"
@@ -811,8 +1133,11 @@
                   required
                 />
               </div>
-              <div class="col-md-4">
-                <button type="submit" class="btn btn-light btn-lg w-100">
+              <div class="col-md-4 col-sm-12">
+                <button
+                  type="submit"
+                  class="btn btn-light btn-lg w-100 mt-2 mt-md-0"
+                >
                   Subscribe
                 </button>
               </div>
@@ -984,6 +1309,7 @@
       AOS.init({
         duration: 1000,
         once: true,
+        disable: "mobile", // Disable on mobile for better performance
       });
 
       // Contact Form Submission
@@ -1175,6 +1501,11 @@
             alert.remove();
           }
         }, 5000);
+      }
+
+      // Mobile detection and optimizations
+      if (window.innerWidth <= 768) {
+        document.body.classList.add("mobile-device");
       }
     </script>
   </body>
