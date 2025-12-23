@@ -70,7 +70,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse fw-bold" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
@@ -284,13 +284,22 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <footer
+      class="text-white py-5"
+      style="
+        background: linear-gradient(
+          135deg,
+          var(--dark-color) 0%,
+          var(--primary-color) 100%
+        );
+      "
+    >
       <div class="container">
         <div class="row">
           <div class="col-lg-4 mb-4 mb-lg-0">
             <div class="d-flex align-items-center mb-3">
               <img
-                src="assets/images/logo.png"
+                src="assets/images/fred.jpeg"
                 alt="FredElectrix Logo"
                 height="40"
                 class="me-2"
@@ -302,16 +311,16 @@
               Kenya since 2023.
             </p>
             <div class="social-icons">
-              <a href="#" class="text-white me-3"
+              <a href="#" class="text-white me-3 text-decoration-none"
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a href="#" class="text-white me-3"
+              <a href="#" class="text-white me-3 text-decoration-none"
                 ><i class="fab fa-twitter"></i
               ></a>
-              <a href="#" class="text-white me-3"
+              <a href="#" class="text-white me-3 text-decoration-none"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <a href="#" class="text-white"
+              <a href="#" class="text-white text-decoration-none"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
             </div>
@@ -320,38 +329,56 @@
             <h5 class="mb-4">Quick Links</h5>
             <ul class="list-unstyled">
               <li class="mb-2">
-                <a href="index.html" class="text-white">Home</a>
+                <a href="index.html" class="text-white text-decoration-none"
+                  >Home</a
+                >
               </li>
               <li class="mb-2">
-                <a href="services.html" class="text-white">Services</a>
+                <a href="services.html" class="text-white text-decoration-none"
+                  >Services</a
+                >
               </li>
               <li class="mb-2">
-                <a href="products.html" class="text-white">Products</a>
+                <a href="products.html" class="text-white text-decoration-none"
+                  >Products</a
+                >
               </li>
               <li class="mb-2">
-                <a href="about.html" class="text-white">About Us</a>
+                <a href="about.html" class="text-white text-decoration-none"
+                  >About Us</a
+                >
               </li>
-              <li><a href="contact.html" class="text-white">Contact</a></li>
+              <li>
+                <a href="contact.html" class="text-white text-decoration-none"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
             <h5 class="mb-4">Legal</h5>
             <ul class="list-unstyled">
               <li class="mb-2">
-                <a href="privacy.html" class="text-white">Privacy Policy</a>
+                <a href="privacy.html" class="text-white text-decoration-none"
+                  >Privacy Policy</a
+                >
               </li>
               <li class="mb-2">
-                <a href="terms-of-service.html" class="text-white"
+                <a
+                  href="terms-of-service.html"
+                  class="text-white text-decoration-none"
                   >Terms of Service</a
                 >
               </li>
               <li class="mb-2">
-                <a href="do-not-sell-info.html" class="text-white"
+                <a
+                  href="do-not-sell-info.html"
+                  class="text-white text-decoration-none"
                   >Do Not Sell My Info</a
                 >
               </li>
               <li>
-                <a href="contact.html" class="text-white"
+                <a href="contact.html" class="text-white text-decoration-none"
                   >Contact for Legal Inquiries</a
                 >
               </li>
@@ -375,24 +402,36 @@
             </ul>
           </div>
         </div>
-        <hr class="my-4 bg-secondary" />
+        <hr
+          class="my-4"
+          style="
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            height: 1px;
+          "
+        />
         <div class="row">
           <div class="col-md-6 text-center text-md-start">
             <p class="mb-0">&copy; 2025 FredElectrix. All rights reserved.</p>
           </div>
           <div class="col-md-6 text-center text-md-end">
-            <a href="privacy.html" class="text-white me-3">Privacy Policy</a>
-            <a href="terms-of-service.html" class="text-white me-3"
+            <a href="privacy.html" class="text-white me-3 text-decoration-none"
+              >Privacy Policy</a
+            >
+            <a
+              href="terms-of-service.html"
+              class="text-white me-3 text-decoration-none"
               >Terms of Service</a
             >
-            <a href="do-not-sell-info.html" class="text-white"
+            <a
+              href="do-not-sell-info.html"
+              class="text-white text-decoration-none"
               >Do Not Sell My Info</a
             >
           </div>
         </div>
       </div>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
