@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <title>
+      Portfolio - FredElectrix | Completed Electrical Projects in Kenya
+    </title>
+    <meta
+      name="description"
+      content="View our completed electrical projects in Kajiado North, Nairobi, Machakos, Makueni, and Kitui counties. Solar installations, CCTV systems, smart home automation, and more."
+    />
+    <!-- Vendor CSS Files -->
+    <link rel="icon" href="assets/images/logo.png" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Portfolio Specific Styles */
+      .project-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        overflow: hidden;
+        height: 100%;
+      }
+
+      .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+      }
+
+      .project-img-container {
+        height: 250px;
+        overflow: hidden;
+      }
+
+      .project-img-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .project-card:hover .project-img-container img {
+        transform: scale(1.05);
+      }
+
+      .location-badge {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        z-index: 2;
+        backdrop-filter: blur(4px);
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+      }
+
+      .service-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        z-index: 2;
+      }
+
+      /* Responsive Portfolio Grid */
+      @media (max-width: 768px) {
+        .project-img-container {
+          height: 200px;
+        }
+
+        .project-card .card-body {
+          padding: 1.25rem !important;
+        }
+
+        .project-title {
+          font-size: 1.1rem !important;
+        }
+
+        .filter-buttons .btn {
+          margin-bottom: 10px;
+          width: 100%;
+          max-width: 250px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .project-img-container {
+          height: 180px;
+        }
+
+        .project-card {
+          margin-bottom: 1.5rem;
+        }
+
+        .location-badge,
+        .service-badge {
+          font-size: 0.75rem;
+          padding: 4px 8px;
+        }
+      }
+
+      @media (max-width: 991.98px) {
+        .col-lg-4 {
+          margin-bottom: 2rem;
+        }
+      }
+
+      /* Mobile-first responsive design principles[citation:2][citation:8] */
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+
+      .img-fluid {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Ensure touch-friendly targets on mobile[citation:2][citation:8] */
+      @media (hover: none) and (pointer: coarse) {
+        .btn {
+          min-height: 44px;
+          padding: 12px 24px;
+        }
+
+        .project-card {
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="assets/images/logo.png"
+            alt="FredElectrix Logo"
+            height="40"
+          />
+          <span class="fw-bold">FredElectrix</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse fw-bold" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-outline-light ms-lg-3"
+                href="contact.html#quote"
+              >
+                <i class="bi bi-chat-dots me-1"></i>Get Quote
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <section class="hero-section bg-light">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-2 order-lg-1">
+            <h1 class="display-4 fw-bold mb-4" data-aos="fade-up">
+              Our Completed Projects
+            </h1>
+            <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">
+              Browse through our successful electrical projects across Kajiado
+              North, Nairobi, Machakos, Makueni, and Kitui counties. Each
+              project showcases our commitment to quality and customer
+              satisfaction.
+            </p>
+            <div
+              class="d-flex flex-column flex-sm-row gap-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a href="#projects" class="btn btn-primary btn-lg mb-2 mb-sm-0">
+                <i class="fas fa-briefcase me-2"></i> View Projects
+              </a>
+              <a href="contact.html" class="btn btn-outline-primary btn-lg">
+                <i class="fas fa-calendar me-2"></i> Schedule Consultation
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0"
+            data-aos="fade-left"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              alt="Electrical Project Installation"
+              class="img-fluid rounded shadow w-100"
+              style="height: 400px; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Filter -->
+    <section class="py-5 bg-light" id="projects">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="text-center mb-4">
+              <h2 class="fw-bold mb-3" data-aos="fade-up">
+                Our Project Portfolio
+              </h2>
+              <p
+                class="lead text-muted"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                15+ Successful Projects Across 5 Counties
+              </p>
+            </div>
+
+            <div
+              class="filter-buttons text-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <button
+                class="btn btn-outline-primary filter-btn active"
+                onclick="filterProjects('all')"
+              >
+                All Projects
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                onclick="filterProjects('solar')"
+              >
+                Solar Systems
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                onclick="filterProjects('security')"
+              >
+                Security Systems
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                onclick="filterProjects('smart')"
+              >
+                Smart Homes
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                onclick="filterProjects('electrical')"
+              >
+                Electrical Works
+              </button>
+              <button
+                class="btn btn-outline-primary filter-btn"
+                onclick="filterProjects('backup')"
+              >
+                Backup Power
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Grid - 15 Projects -->
+        <div class="row g-4 projects-grid">
+          <!-- Project 1 - Solar Installation -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="solar">
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="Solar Installation"
+                />
+                <span class="location-badge badge bg-dark">Kajiado North</span>
+                <span class="service-badge badge bg-primary">Solar</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  10kW Solar System Installation
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Complete residential solar system with battery backup for a
+                  5-bedroom home in Kitengela. System includes 24 solar panels
+                  and 4 lithium batteries.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: March 2024
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-home me-1"></i> Residential Property
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-bolt me-1"></i> 10kW Output
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 850,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="1"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 - CCTV System -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="security">
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="CCTV Installation"
+                />
+                <span class="location-badge badge bg-dark">Nairobi County</span>
+                <span class="service-badge badge bg-info">Security</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Commercial CCTV Surveillance
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  16-camera 4K surveillance system for a retail complex in
+                  Westlands. Includes remote monitoring and 30-day cloud
+                  storage.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: January 2024
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-building me-1"></i> Commercial Property
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-video me-1"></i> 16 Cameras
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 320,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="2"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 - Smart Home -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="smart">
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="Smart Home"
+                />
+                <span class="location-badge badge bg-dark"
+                  >Machakos County</span
+                >
+                <span class="service-badge badge bg-success">Smart Home</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Luxury Smart Home Automation
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Complete home automation for a luxury villa in Athi River.
+                  Includes automated lighting, smart gates, and voice-controlled
+                  systems.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: February
+                    2024
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-home me-1"></i> Luxury Villa
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-robot me-1"></i> Full Automation
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 1,200,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="3"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 - Electrical Rewiring -->
+          <div
+            class="col-md-6 col-lg-4 project-item"
+            data-category="electrical"
+          >
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="Electrical Wiring"
+                />
+                <span class="location-badge badge bg-dark">Makueni County</span>
+                <span class="service-badge badge bg-warning text-dark"
+                  >Electrical</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Complete Home Rewiring
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Full electrical rewiring for a 4-bedroom home in Wote.
+                  Included new circuit panels, surge protection, and LED
+                  lighting installation.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: December
+                    2023
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-home me-1"></i> Residential
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-wrench me-1"></i> Full Rewiring
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 180,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="4"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 - Backup Generator -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="backup">
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="Generator Installation"
+                />
+                <span class="location-badge badge bg-dark">Kitui County</span>
+                <span class="service-badge badge bg-danger">Backup Power</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Industrial Generator Installation
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  150kVA silent generator installation for a manufacturing plant
+                  in Kitui town. Includes automatic transfer switch and
+                  soundproof enclosure.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: November
+                    2023
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-industry me-1"></i> Industrial
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-bolt me-1"></i> 150kVA
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 950,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="5"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 - Solar Water Heating -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="solar">
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1598791318875-17b0f6d7dcbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="Solar Water Heating"
+                />
+                <span class="location-badge badge bg-dark">Nairobi County</span>
+                <span class="service-badge badge bg-primary">Solar</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Solar Water Heating System
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Installation of solar water heating system for an apartment
+                  complex in Kilimani. Serves 20 units with 500-liter storage
+                  capacity.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: October 2023
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-building me-1"></i> Apartment Complex
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-water me-1"></i> 500L Capacity
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 280,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="6"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Continue with Projects 7-15 (I'll provide complete code for all 15 projects) -->
+
+          <!-- Project 7 - Access Control System -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="security">
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="Access Control"
+                />
+                <span class="location-badge badge bg-dark">Kajiado North</span>
+                <span class="service-badge badge bg-info">Security</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Biometric Access Control
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Biometric access control system for an office building in
+                  Kitengela. Includes fingerprint scanners and remote access
+                  management.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: September
+                    2023
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-building me-1"></i> Office Building
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-fingerprint me-1"></i> Biometric System
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 150,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="7"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 - LED Lighting Retrofit -->
+          <div
+            class="col-md-6 col-lg-4 project-item"
+            data-category="electrical"
+          >
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="LED Lighting"
+                />
+                <span class="location-badge badge bg-dark"
+                  >Machakos County</span
+                >
+                <span class="service-badge badge bg-warning text-dark"
+                  >Electrical</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Commercial LED Retrofit
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Complete LED lighting retrofit for a supermarket in Machakos
+                  town. Replaced 200+ fluorescent fixtures with energy-efficient
+                  LEDs.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: August 2023
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-store me-1"></i> Supermarket
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-lightbulb me-1"></i> 200+ Fixtures
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 220,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="8"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 9 - UPS System -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="backup">
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="UPS System"
+                />
+                <span class="location-badge badge bg-dark">Nairobi County</span>
+                <span class="service-badge badge bg-danger">Backup Power</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Data Center UPS Installation
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Redundant UPS system installation for a data center in Upper
+                  Hill. Provides 8-hour backup for critical servers and network
+                  equipment.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: July 2023
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-server me-1"></i> Data Center
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-shield-alt me-1"></i> Redundant System
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 450,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="9"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 10 - Home Theater -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="smart">
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="Home Theater"
+                />
+                <span class="location-badge badge bg-dark">Makueni County</span>
+                <span class="service-badge badge bg-success">Smart Home</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Luxury Home Theater Setup
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Custom home theater installation with 7.1 surround sound, 4K
+                  projection, and automated control system in a residential
+                  home.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: June 2023
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-home me-1"></i> Residential
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-film me-1"></i> 7.1 Surround
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 380,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="10"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 11 - Farm Solar System -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="solar">
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="Farm Solar"
+                />
+                <span class="location-badge badge bg-dark">Kitui County</span>
+                <span class="service-badge badge bg-primary">Solar</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Agricultural Solar Pump System
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Solar-powered irrigation system for a 10-acre farm. Includes
+                  5kW solar array, water pump, and automated irrigation control.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: May 2023
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-tractor me-1"></i> Agricultural
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-water me-1"></i> Irrigation System
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 550,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="11"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 12 - Alarm System -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="security">
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="Alarm System"
+                />
+                <span class="location-badge badge bg-dark">Nairobi County</span>
+                <span class="service-badge badge bg-info">Security</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Wireless Alarm System
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Complete wireless alarm system for a gated community in Karen.
+                  Includes motion sensors, door contacts, and 24/7 monitoring.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: April 2023
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-city me-1"></i> Gated Community
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-bell me-1"></i> Wireless System
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 190,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="12"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 13 - Electrical Panel Upgrade -->
+          <div
+            class="col-md-6 col-lg-4 project-item"
+            data-category="electrical"
+          >
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="Electrical Panel"
+                />
+                <span class="location-badge badge bg-dark">Kajiado North</span>
+                <span class="service-badge badge bg-warning text-dark"
+                  >Electrical</span
+                >
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Main Panel Upgrade
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Upgrade of main electrical panel from 100A to 200A for a
+                  growing household. Includes new circuit breakers and surge
+                  protection.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: March 2023
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-home me-1"></i> Residential
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-plug me-1"></i> 200A Upgrade
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 75,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="13"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 14 - Inverter System -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="backup">
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="Inverter System"
+                />
+                <span class="location-badge badge bg-dark"
+                  >Machakos County</span
+                >
+                <span class="service-badge badge bg-danger">Backup Power</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Home Inverter System
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  5kVA pure sine wave inverter installation with 4 batteries.
+                  Provides backup for essential home appliances during power
+                  outages.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: February
+                    2023
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-home me-1"></i> Residential
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-battery-full me-1"></i> 5kVA System
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 120,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="14"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 15 - Smart Gate Automation -->
+          <div class="col-md-6 col-lg-4 project-item" data-category="smart">
+            <div
+              class="card project-card border-0 shadow-sm h-100"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="project-img-container position-relative">
+                <img
+                  src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  class="card-img-top"
+                  alt="Smart Gate"
+                />
+                <span class="location-badge badge bg-dark">Makueni County</span>
+                <span class="service-badge badge bg-success">Smart Home</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title project-title mb-3">
+                  Automatic Gate System
+                </h5>
+                <p class="card-text text-muted mb-3">
+                  Installation of automatic sliding gate with remote control,
+                  keypad entry, and smartphone integration for secure access.
+                </p>
+                <div class="project-details mb-3">
+                  <small class="text-muted d-block">
+                    <i class="fas fa-calendar me-1"></i> Completed: January 2023
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-home me-1"></i> Residential
+                  </small>
+                  <small class="text-muted d-block">
+                    <i class="fas fa-robot me-1"></i> Automated Gate
+                  </small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary"
+                    >Project Value: KSh 95,000</span
+                  >
+                  <button
+                    class="btn btn-outline-primary btn-sm view-project-btn"
+                    data-project="15"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="contact.html" class="btn btn-primary btn-lg px-4">
+            <i class="fas fa-calendar-check me-2"></i> Start Your Project
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold mb-3">Our Electrical Services</h2>
+          <p class="lead text-muted">
+            Comprehensive solutions for all your electrical needs
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="icon-box bg-primary mb-3 mx-auto">
+                  <i class="fas fa-sun text-white"></i>
+                </div>
+                <h5 class="mb-3">Solar Power Systems</h5>
+                <p class="text-muted mb-0">
+                  Harness the power of the sun with our professional solar
+                  installation services for residential and commercial
+                  properties.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="icon-box bg-primary mb-3 mx-auto">
+                  <i class="fas fa-shield-alt text-white"></i>
+                </div>
+                <h5 class="mb-3">Security Systems</h5>
+                <p class="text-muted mb-0">
+                  Comprehensive security solutions including CCTV cameras, alarm
+                  systems, and access control for enhanced safety.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body text-center p-4">
+                <div class="icon-box bg-primary mb-3 mx-auto">
+                  <i class="fas fa-robot text-white"></i>
+                </div>
+                <h5 class="mb-3">Smart Home Automation</h5>
+                <p class="text-muted mb-0">
+                  Transform your home with intelligent automation systems for
+                  lighting, gates, entertainment, and climate control.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counties We Serve -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold mb-3">Counties We Serve</h2>
+          <p class="lead text-muted">
+            Providing electrical services across multiple counties in Kenya
+          </p>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-2 col-4 mb-4">
+            <div class="p-3 border rounded-3">
+              <i class="fas fa-map-marker-alt text-primary fa-2x mb-2"></i>
+              <h6>Kajiado North</h6>
+            </div>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <div class="p-3 border rounded-3">
+              <i class="fas fa-map-marker-alt text-primary fa-2x mb-2"></i>
+              <h6>Nairobi</h6>
+            </div>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <div class="p-3 border rounded-3">
+              <i class="fas fa-map-marker-alt text-primary fa-2x mb-2"></i>
+              <h6>Machakos</h6>
+            </div>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <div class="p-3 border rounded-3">
+              <i class="fas fa-map-marker-alt text-primary fa-2x mb-2"></i>
+              <h6>Makueni</h6>
+            </div>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <div class="p-3 border rounded-3">
+              <i class="fas fa-map-marker-alt text-primary fa-2x mb-2"></i>
+              <h6>Kitui</h6>
+            </div>
+          </div>
+          <div class="col-md-2 col-4 mb-4">
+            <div class="p-3 border rounded-3">
+              <i class="fas fa-plus text-primary fa-2x mb-2"></i>
+              <h6>More Areas</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold mb-3">Our Service Process</h2>
+          <p class="lead text-muted">
+            How we deliver excellence in every project
+          </p>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-md-3 mb-4">
+            <div class="process-step mx-auto mb-3">
+              <div
+                class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto"
+                style="width: 80px; height: 80px"
+              >
+                <h4 class="mb-0">1</h4>
+              </div>
+            </div>
+            <h5>Consultation</h5>
+            <p class="text-muted">
+              We discuss your requirements and assess the project scope
+            </p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="process-step mx-auto mb-3">
+              <div
+                class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto"
+                style="width: 80px; height: 80px"
+              >
+                <h4 class="mb-0">2</h4>
+              </div>
+            </div>
+            <h5>Quotation</h5>
+            <p class="text-muted">
+              We provide detailed quote with transparent pricing
+            </p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="process-step mx-auto mb-3">
+              <div
+                class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto"
+                style="width: 80px; height: 80px"
+              >
+                <h4 class="mb-0">3</h4>
+              </div>
+            </div>
+            <h5>Installation</h5>
+            <p class="text-muted">
+              Professional installation by certified technicians
+            </p>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="process-step mx-auto mb-3">
+              <div
+                class="rounded-circle bg-primary text-white d-flex align-items-center justify-content-center mx-auto"
+                style="width: 80px; height: 80px"
+              >
+                <h4 class="mb-0">4</h4>
+              </div>
+            </div>
+            <h5>Support</h5>
+            <p class="text-muted">
+              Ongoing maintenance and after-sales support
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 mb-4 mb-lg-0 text-center text-lg-start">
+            <h2 class="mb-3">Ready to Start Your Electrical Project?</h2>
+            <p class="mb-0">
+              Contact us today for a free consultation and project assessment
+            </p>
+          </div>
+          <div class="col-lg-4 text-center text-lg-end">
+            <a href="contact.html" class="btn btn-light btn-lg px-4">
+              <i class="fas fa-phone me-2"></i> Get Free Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="text-white py-5"
+      style="
+        background: linear-gradient(
+          135deg,
+          var(--dark-color) 0%,
+          var(--primary-color) 100%
+        );
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="assets/images/logo.png"
+                alt="FredElectrix Logo"
+                height="40"
+                class="me-2"
+              />
+              <span class="h4 fw-bold mb-0">FredElectrix</span>
+            </div>
+            <p class="mb-4">
+              Your trusted partner for electrical solutions and electronics in
+              Kenya since 2023.
+            </p>
+            <div class="social-icons">
+              <a href="#" class="text-white me-3 text-decoration-none"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3 text-decoration-none"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-3 text-decoration-none"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-white text-decoration-none"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="index.html" class="text-white text-decoration-none"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="services.html" class="text-white text-decoration-none"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="portfolio.html" class="text-white text-decoration-none"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="about.html" class="text-white text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-white text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="mb-4">Legal</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="privacy.html" class="text-white text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="terms-of-service.html"
+                  class="text-white text-decoration-none"
+                  >Terms of Service</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="do-not-sell-info.html"
+                  class="text-white text-decoration-none"
+                  >Do Not Sell My Info</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-white text-decoration-none"
+                  >Contact for Legal Inquiries</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="mb-4">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <i class="fas fa-map-marker-alt me-2"></i> Nairobi, Kenya
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-phone me-2"></i> +254 720 123 456
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-phone me-2"></i> +254 734 567 890
+              </li>
+              <li>
+                <i class="fas fa-envelope me-2"></i> info@fredelectrix.co.ke
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr
+          class="my-4"
+          style="
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            height: 1px;
+          "
+        />
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">&copy; 2025 FredElectrix. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a href="privacy.html" class="text-white me-3 text-decoration-none"
+              >Privacy Policy</a
+            >
+            <a
+              href="terms-of-service.html"
+              class="text-white me-3 text-decoration-none"
+              >Terms of Service</a
+            >
+            <a
+              href="do-not-sell-info.html"
+              class="text-white text-decoration-none"
+              >Do Not Sell My Info</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Vendor JS -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000,
+        once: true,
+        disable: "mobile",
+      });
+
+      // Initialize GLightbox for project images
+      const lightbox = GLightbox({
+        selector: ".view-project-btn",
+      });
+
+      // Project Filter Functionality
+      function filterProjects(category) {
+        const projects = document.querySelectorAll(".project-item");
+
+        projects.forEach((project) => {
+          if (category === "all" || project.dataset.category === category) {
+            project.style.display = "block";
+            setTimeout(() => {
+              project.style.opacity = "1";
+              project.style.transform = "scale(1)";
+            }, 50);
+          } else {
+            project.style.opacity = "0";
+            project.style.transform = "scale(0.8)";
+            setTimeout(() => {
+              project.style.display = "none";
+            }, 300);
+          }
+        });
+
+        // Update active filter button
+        document.querySelectorAll(".filter-btn").forEach((btn) => {
+          btn.classList.remove("active");
+        });
+        event.target.classList.add("active");
+      }
+
+      // Set up project detail buttons
+      document.querySelectorAll(".view-project-btn").forEach((button) => {
+        button.addEventListener("click", function () {
+          const projectId = this.getAttribute("data-project");
+          // In a real implementation, you would show a modal or redirect to a project detail page
+          alert(
+            `Viewing details for Project ${projectId}. This would open a detailed view in a real implementation.`
+          );
+        });
+      });
+
+      // Mobile detection and optimizations
+      if (window.innerWidth <= 768) {
+        document.body.classList.add("mobile-device");
+
+        // Optimize images for mobile
+        const images = document.querySelectorAll(".project-img-container img");
+        images.forEach((img) => {
+          // You could implement responsive image loading here
+          // For example, load smaller images for mobile
+        });
+      }
+    </script>
+  </body>
+</html>
